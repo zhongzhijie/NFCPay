@@ -1,0 +1,2 @@
+基于NFC的手机支付系统的eclipse工程
+详见NFCPay设计文档.docx

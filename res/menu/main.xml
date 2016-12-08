@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:title="@string/tran_log"
+	      android:id="@+id/tran_rec"
+		  android:showAsAction="always|withText"
+		  android:icon="@drawable/tran_log">
+	</item>
+	<item 
+	   	  android:title="@string/high_func"
+	   	  android:id="@+id/high_funct"
+		  android:showAsAction="always|withText"
+		  android:icon="@drawable/high_func">
+	</item>
+</menu>

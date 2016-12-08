@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:background="#ECFFFF"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+		android:id="@+id/record"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="16dip"
+		android:layout_marginTop="16dip"
+		android:textSize="15pt"
+		android:textColor="#0080FF"
+		android:text="交易记录"/>
+    <Button 
+        android:id="@+id/bt_clearlog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:textSize="8pt"
+        android:onClick="BtnclrUserLog"
+        android:text="清除记录"/>
+</RelativeLayout>
+
+
+<ListView  
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dip"
+    android:dividerHeight="0dip"
+    android:divider="#FFFFFF"
+    android:listSelector="@android:color/transparent"
+    android:id="@+id/listView"
+    />
+</LinearLayout>

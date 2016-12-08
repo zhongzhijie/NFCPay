@@ -1,0 +1,112 @@
+<LinearLayout
+    android:id="@+id/LinearLayout01"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:gravity="center|center"
+	android:background="@drawable/bg"
+	android:orientation="vertical">
+
+	<ImageView
+	    android:layout_marginTop="-40dip"
+		android:paddingLeft="20dip"
+
+		android:scaleType="centerInside"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/nfcpay_logo"
+		android:src="@drawable/logo">
+	</ImageView>
+
+<RelativeLayout
+    android:id="@+id/rl_login"
+    android:layout_marginTop="-300dip"
+	android:layout_width="fill_parent"
+	android:layout_marginLeft="60dip"
+	android:layout_marginRight="60dip"
+	android:layout_height="wrap_content">
+       
+	<TextView
+           android:id="@+id/tv_zh"
+           android:layout_width="wrap_content"
+           android:layout_height="35dip"
+           android:gravity="bottom"
+           android:text="帐号:"
+           android:textColor="#000000"
+           android:textSize="18sp"/>
+
+       <EditText
+           android:id="@+id/et_zh"
+           android:layout_width="fill_parent"
+           android:layout_height="40dip"
+           android:layout_below="@id/tv_zh"
+           android:digits="1234567890qwertyuiopasdfghjklzxcvbnm"
+           android:hint="请输入6位内数字或小写字母"
+           android:maxLength="6"
+           android:textSize="18sp"/>
+
+       <TextView
+           android:id="@+id/tv_mima"
+           android:layout_width="wrap_content"
+           android:layout_height="35dip"
+           android:layout_below="@id/et_zh"
+           android:gravity="bottom"
+           android:text="密码:"
+           android:textColor="#000000"
+           android:textSize="18sp" />
+
+       <EditText
+           android:id="@+id/et_mima"
+           android:layout_width="fill_parent"
+           android:layout_height="40dip"
+           android:layout_below="@id/tv_mima"
+           android:password="true"
+           android:inputType="numberPassword"
+           android:hint="请输入6位内数字密码"
+           android:maxLength="6"
+           android:scrollHorizontally="true"
+           android:textSize="18sp" />
+
+       <Button
+           android:id="@+id/btn_login"
+           android:layout_width="wrap_content"
+           android:layout_height="40dip"
+           android:layout_below="@id/et_mima"
+           android:layout_marginTop="20dip"
+           android:layout_alignParentRight="true"
+           android:layout_marginRight="20dip"
+           android:gravity="center"
+           android:text="登  录"
+           android:textColor="#000000"
+           android:textSize="18sp"/>
+       <Button
+           android:id="@+id/btn_reg"
+           android:layout_width="wrap_content"
+           android:layout_height="40dip"
+           android:layout_below="@id/et_mima"
+           android:layout_marginTop="20dip"
+           android:layout_alignParentLeft="true"
+           android:layout_marginLeft="20dip"
+           android:gravity="center"
+           android:text="注  册"
+           android:textColor="#000000"
+           android:textSize="18sp"/>
+
+	<TextView
+	    android:text="武汉大学珞珈学院\nAll Rights Reserved\n2016-2018"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+		android:typeface="serif"
+		android:shadowDx="0"
+		android:shadowDy="2"
+		android:shadowRadius="1"
+		android:shadowColor="#FFFFFF"
+		android:textColor="#444444"
+		android:textSize="20dip"
+		android:id="@+id/versionNumber">
+	</TextView>
+</RelativeLayout>
+
+</LinearLayout>
